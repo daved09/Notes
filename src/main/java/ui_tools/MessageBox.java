@@ -6,7 +6,11 @@ import javafx.scene.control.Alert.AlertType;
 public class MessageBox {
 
     public static void show(String text){
-        show("Message", text, text, AlertType.INFORMATION);
+        show("Message", "", text, AlertType.INFORMATION);
+    }
+
+    public static void showError(String title, String text){
+        show(title, "", text, AlertType.ERROR);
     }
 
     public static void show(String title, String header, String text, AlertType type){
