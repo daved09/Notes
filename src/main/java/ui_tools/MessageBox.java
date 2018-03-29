@@ -9,8 +9,8 @@ public class MessageBox {
         show("Message", "", text, AlertType.INFORMATION);
     }
 
-    public static void showError(String title, String text){
-        show(title, "", text, AlertType.ERROR);
+    public static void showError(String text){
+        show("Error", "", text, AlertType.ERROR);
     }
 
     public static void show(String title, String header, String text, AlertType type){
