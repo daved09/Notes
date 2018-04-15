@@ -1,12 +1,12 @@
 package controller;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import ui_tools.MessageBox;
+import ui_tools.StageTool;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -22,8 +22,13 @@ public class NoteWindowController implements Initializable {
     }
 
     public void keyPress(KeyEvent event){
-        if(event.isControlDown() && event.getCode() == KeyCode.S){
-            MessageBox.show("Save");
+        if(event.isControlDown()){
+            if(event.getCode() == KeyCode.S){
+
+            }
+            if(event.getCode() == KeyCode.Y){
+                StageTool.getScene(txtTitle).close();
+            }
         }
     }
 

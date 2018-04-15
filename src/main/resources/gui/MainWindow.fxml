@@ -28,6 +28,6 @@
           </Menu>
         </menus>
       </MenuBar>
-      <ListView fx:id="noteList" layoutY="31.0" prefHeight="459.0" prefWidth="443.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="31.0" />
+      <ListView fx:id="noteList" layoutY="23.0" prefHeight="467.0" prefWidth="443.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="23.0" />
    </children>
 </AnchorPane>
